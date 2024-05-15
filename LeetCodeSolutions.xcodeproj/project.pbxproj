@@ -10,10 +10,8 @@
 		653394652BF5009A00D919F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394642BF5009A00D919F2 /* AppDelegate.swift */; };
 		653394672BF5009A00D919F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394662BF5009A00D919F2 /* SceneDelegate.swift */; };
 		653394692BF5009A00D919F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394682BF5009A00D919F2 /* ViewController.swift */; };
-		6533946C2BF5009A00D919F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6533946B2BF5009A00D919F2 /* Base */; };
 		6533946E2BF5009B00D919F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6533946D2BF5009B00D919F2 /* Assets.xcassets */; };
 		653394712BF5009B00D919F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 653394702BF5009B00D919F2 /* Base */; };
-		6533947C2BF5009B00D919F2 /* LeetCodeSolutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533947B2BF5009B00D919F2 /* LeetCodeSolutionsTests.swift */; };
 		653394862BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394852BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift */; };
 		653394882BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -40,12 +38,10 @@
 		653394642BF5009A00D919F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		653394662BF5009A00D919F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		653394682BF5009A00D919F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6533946B2BF5009A00D919F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6533946D2BF5009B00D919F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653394702BF5009B00D919F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653394722BF5009B00D919F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653394772BF5009B00D919F2 /* LeetCodeSolutionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeSolutionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6533947B2BF5009B00D919F2 /* LeetCodeSolutionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSolutionsTests.swift; sourceTree = "<group>"; };
 		653394812BF5009B00D919F2 /* LeetCodeSolutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeSolutionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653394852BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSolutionsUITests.swift; sourceTree = "<group>"; };
 		653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSolutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,13 +95,9 @@
 		653394632BF5009A00D919F2 /* LeetCodeSolutions */ = {
 			isa = PBXGroup;
 			children = (
-				653394642BF5009A00D919F2 /* AppDelegate.swift */,
-				653394662BF5009A00D919F2 /* SceneDelegate.swift */,
-				653394682BF5009A00D919F2 /* ViewController.swift */,
-				6533946A2BF5009A00D919F2 /* Main.storyboard */,
-				6533946D2BF5009B00D919F2 /* Assets.xcassets */,
-				6533946F2BF5009B00D919F2 /* LaunchScreen.storyboard */,
-				653394722BF5009B00D919F2 /* Info.plist */,
+				653394942BF500BE00D919F2 /* Application */,
+				653394952BF500CB00D919F2 /* Resources */,
+				653394962BF500D200D919F2 /* Scenes */,
 			);
 			path = LeetCodeSolutions;
 			sourceTree = "<group>";
@@ -113,7 +105,6 @@
 		6533947A2BF5009B00D919F2 /* LeetCodeSolutionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				6533947B2BF5009B00D919F2 /* LeetCodeSolutionsTests.swift */,
 			);
 			path = LeetCodeSolutionsTests;
 			sourceTree = "<group>";
@@ -125,6 +116,33 @@
 				653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */,
 			);
 			path = LeetCodeSolutionsUITests;
+			sourceTree = "<group>";
+		};
+		653394942BF500BE00D919F2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				653394642BF5009A00D919F2 /* AppDelegate.swift */,
+				653394662BF5009A00D919F2 /* SceneDelegate.swift */,
+				653394722BF5009B00D919F2 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		653394952BF500CB00D919F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6533946D2BF5009B00D919F2 /* Assets.xcassets */,
+				6533946F2BF5009B00D919F2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		653394962BF500D200D919F2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				653394682BF5009A00D919F2 /* ViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +251,6 @@
 			files = (
 				6533946E2BF5009B00D919F2 /* Assets.xcassets in Resources */,
 				653394712BF5009B00D919F2 /* Base in Resources */,
-				6533946C2BF5009A00D919F2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6533947C2BF5009B00D919F2 /* LeetCodeSolutionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6533946A2BF5009A00D919F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6533946B2BF5009A00D919F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6533946F2BF5009B00D919F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,10 +452,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeetCodeSolutions/Info.plist;
+				INFOPLIST_FILE = LeetCodeSolutions/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,10 +479,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeetCodeSolutions/Info.plist;
+				INFOPLIST_FILE = LeetCodeSolutions/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
