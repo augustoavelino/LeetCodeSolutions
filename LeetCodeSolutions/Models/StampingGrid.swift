@@ -32,6 +32,8 @@ extension StampingGrid {
     }
     
     struct Tile {
+        /// Indicates if the the tile is occupied and a stamp can't be placed.
+        /// This does not mean there are stamps in this tile. If `true`, not a single stamp can be placed.
         let isOccupied: Bool
         private(set) var stamps: [Int] = []
         
@@ -107,6 +109,11 @@ extension StampingGrid {
             }
         }
         
+        /**
+         Iterates through the matrix placing stamp wherever possible.
+         - Parameters:
+             - stampSize: The size of the stamps being placed.
+         */
         func placeStamps(withSize stampSize: Size) {
             guard numberOfRows >= stampSize.height,
                   numberOfColumns >= stampSize.width else { return }
@@ -120,6 +127,9 @@ extension StampingGrid {
             }
         }
         
+        /**
+         Removes the stamps from all tiles.
+         */
         func removeAllStamps() {
             for row in 0..<numberOfRows {
                 for col in 0..<numberOfColumns {
