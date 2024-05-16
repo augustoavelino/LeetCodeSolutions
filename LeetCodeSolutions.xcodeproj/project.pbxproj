@@ -14,6 +14,8 @@
 		653394712BF5009B00D919F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 653394702BF5009B00D919F2 /* Base */; };
 		653394862BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394852BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift */; };
 		653394882BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */; };
+		653394992BF5030600D919F2 /* StampingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394982BF5030600D919F2 /* StampingGrid.swift */; };
+		6533949D2BF51C4200D919F2 /* StampingGridSolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		653394812BF5009B00D919F2 /* LeetCodeSolutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeSolutionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653394852BF5009B00D919F2 /* LeetCodeSolutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSolutionsUITests.swift; sourceTree = "<group>"; };
 		653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeSolutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		653394982BF5030600D919F2 /* StampingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampingGrid.swift; sourceTree = "<group>"; };
+		6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampingGridSolutionTests.swift; sourceTree = "<group>"; };
+		655894322BF5448B00BC526C /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		653394582BF5009A00D919F2 = {
 			isa = PBXGroup;
 			children = (
+				6558942F2BF5442900BC526C /* TestPlans */,
 				653394632BF5009A00D919F2 /* LeetCodeSolutions */,
 				6533947A2BF5009B00D919F2 /* LeetCodeSolutionsTests */,
 				653394842BF5009B00D919F2 /* LeetCodeSolutionsUITests */,
@@ -97,6 +103,7 @@
 			children = (
 				653394942BF500BE00D919F2 /* Application */,
 				653394952BF500CB00D919F2 /* Resources */,
+				653394972BF502DF00D919F2 /* Models */,
 				653394962BF500D200D919F2 /* Scenes */,
 			);
 			path = LeetCodeSolutions;
@@ -105,6 +112,7 @@
 		6533947A2BF5009B00D919F2 /* LeetCodeSolutionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */,
 			);
 			path = LeetCodeSolutionsTests;
 			sourceTree = "<group>";
@@ -143,6 +151,22 @@
 				653394682BF5009A00D919F2 /* ViewController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		653394972BF502DF00D919F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				653394982BF5030600D919F2 /* StampingGrid.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6558942F2BF5442900BC526C /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				655894322BF5448B00BC526C /* UnitTests.xctestplan */,
+			);
+			path = TestPlans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +240,7 @@
 					};
 					653394762BF5009B00D919F2 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 						TestTargetID = 653394602BF5009A00D919F2;
 					};
 					653394802BF5009B00D919F2 = {
@@ -277,6 +302,7 @@
 			files = (
 				653394692BF5009A00D919F2 /* ViewController.swift in Sources */,
 				653394652BF5009A00D919F2 /* AppDelegate.swift in Sources */,
+				653394992BF5030600D919F2 /* StampingGrid.swift in Sources */,
 				653394672BF5009A00D919F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6533949D2BF51C4200D919F2 /* StampingGridSolutionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +529,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
@@ -511,6 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.augustoavelino.LeetCodeSolutionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetCodeSolutions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeetCodeSolutions";
@@ -522,6 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QJFWMSLWU;
