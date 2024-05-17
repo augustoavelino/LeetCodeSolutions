@@ -29,9 +29,8 @@ final class GroupAnagramsTests: XCTestCase {
     func test_groupAnagrams_shouldGroupAnagramsIntoAnArrayOfArrays() {
         for testCase in TestCase.all {
             let result = sut.groupAnagrams(testCase.input)
-            let rSet = Set(result.map(Set.init))
-            let oSet = Set(testCase.output.map(Set.init))
-            XCTAssertTrue(rSet.allSatisfy({ oSet.contains($0) }))
+            let sortedResult = result.map({ $0.sorted() }).sorted(by: { $0.count < $1.count && $0.first! < $1.first! })
+            XCTAssertEqual(sortedResult, testCase.output)
         }
     }
     
@@ -59,16 +58,3 @@ final class GroupAnagramsTests: XCTestCase {
         )
     }
 }
-
-//Example 1:
-//
-//Input: strs = ["eat","tea","tan","ate","nat","bat"]
-//Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-//Example 2:
-//
-//Input: strs = [""]
-//Output: [[""]]
-//Example 3:
-//
-//Input: strs = ["a"]
-//Output: [["a"]]
