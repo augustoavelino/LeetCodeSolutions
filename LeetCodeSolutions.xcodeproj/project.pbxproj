@@ -20,6 +20,8 @@
 		653394882BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394872BF5009B00D919F2 /* LeetCodeSolutionsUITestsLaunchTests.swift */; };
 		653394992BF5030600D919F2 /* StampingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653394982BF5030600D919F2 /* StampingGrid.swift */; };
 		6533949D2BF51C4200D919F2 /* StampingGridSolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */; };
+		65F611682BFBEEA100E22C27 /* AverageWaitingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F611672BFBEEA100E22C27 /* AverageWaitingTime.swift */; };
+		65F6116A2BFBEEB400E22C27 /* AverageWaitingTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F611692BFBEEB400E22C27 /* AverageWaitingTimeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		653394982BF5030600D919F2 /* StampingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampingGrid.swift; sourceTree = "<group>"; };
 		6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampingGridSolutionTests.swift; sourceTree = "<group>"; };
 		655894322BF5448B00BC526C /* UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTests.xctestplan; sourceTree = "<group>"; };
+		65F611672BFBEEA100E22C27 /* AverageWaitingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageWaitingTime.swift; sourceTree = "<group>"; };
+		65F611692BFBEEB400E22C27 /* AverageWaitingTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageWaitingTimeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				652ADBE92BF6A758008EF006 /* AddTwoNumbersTests.swift */,
+				65F611692BFBEEB400E22C27 /* AverageWaitingTimeTests.swift */,
 				6533949C2BF51C4200D919F2 /* StampingGridSolutionTests.swift */,
 				652ADBED2BF6ACA0008EF006 /* GroupAnagramsTests.swift */,
 			);
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				652ADBE72BF6823A008EF006 /* AddTwoNumbers.swift */,
+				65F611672BFBEEA100E22C27 /* AverageWaitingTime.swift */,
 				652ADBEB2BF6AC79008EF006 /* GroupAnagrams.swift */,
 				653394982BF5030600D919F2 /* StampingGrid.swift */,
 			);
@@ -316,6 +322,7 @@
 				653394692BF5009A00D919F2 /* ViewController.swift in Sources */,
 				653394652BF5009A00D919F2 /* AppDelegate.swift in Sources */,
 				653394992BF5030600D919F2 /* StampingGrid.swift in Sources */,
+				65F611682BFBEEA100E22C27 /* AverageWaitingTime.swift in Sources */,
 				653394672BF5009A00D919F2 /* SceneDelegate.swift in Sources */,
 				652ADBEC2BF6AC79008EF006 /* GroupAnagrams.swift in Sources */,
 			);
@@ -325,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F6116A2BFBEEB400E22C27 /* AverageWaitingTimeTests.swift in Sources */,
 				652ADBEE2BF6ACA0008EF006 /* GroupAnagramsTests.swift in Sources */,
 				6533949D2BF51C4200D919F2 /* StampingGridSolutionTests.swift in Sources */,
 				652ADBEA2BF6A758008EF006 /* AddTwoNumbersTests.swift in Sources */,
